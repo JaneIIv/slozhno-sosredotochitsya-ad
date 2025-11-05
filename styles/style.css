@@ -1,5 +1,122 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  justify-items: end;
+  padding: 13px;
+}
+
+.decorated-zone {
+  height: 100vh;
+  min-height: 668px;
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  align-self: flex-start;
+  justify-self: end;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--decoration-color);
+  border-inline-end: 1px solid var(--decoration-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  justify-self: start;
+  align-self: flex-end;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--button-color);
+  border-inline-end: 1px solid var(--button-color);
+}
+
+.rec {
+  position: absolute;
+  visibility: var(--visible);
+  color: var(--button-color);
+  text-transform: uppercase;
+  inset-block-start: var(--main-padding);
+  inset-inline-end: calc(var(--main-padding) + 3px + 25px);
+}
+
+.rec::after {
+  content: "";
+  position: absolute;
+  block-size: 5px;
+  inline-size: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 4px var(--button-color);
+  color: var(--button-color);
+  background-color: var(--button-color);
+  inset-inline-end: -18px;
+  inset-block-start: 9px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.header__theme-menu-button {
+  position: relative;
+  display: block;
+  border: 1px solid transparent;
+  padding: 2px 13px 4px;
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;
+  line-height: 1;
+  color: var(--nav-color);
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible::after {
+  content: "";
+  position: absolute;
+  inline-size: 100%;
+  block-size: 1px;
+  background-color: var(--nav-color);
+  inset-inline-start: 0;
+  inset-block-end: -2px;
+}
+
+.header__theme-menu-button:hover {
+  --nav-hover-color: rgb (255 0 112 / 0.4);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--nav-color);
+  pointer-events: none;
+}
+
+.header__title {
+  justify-self: start;
+  line-height: 0.825;
+  color: var(--header-title-color);
+  font-size: var(--header-title-size);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__description {
+  font-weight: bold;
 }
