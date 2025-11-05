@@ -144,13 +144,12 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: var(--line-height-main);
-  margin-block-start: 41px;
-  margin-block-end: 20px;
-  border-radius: 6px;
+  margin-block-start: 40px;
+  margin-block-end: 19px;
 }
 
 article {
-  margin-block-end: 21px;
+  margin-block-end: 20px;
 }
 
 article:last-of-type {
@@ -170,7 +169,6 @@ article:last-of-type {
   line-height: var(--line-height-main);
   background-color: var(--color-title-bg);
   margin: 0 0 10px;
-  border-radius: 6px;
 }
 
 .paragraph {
@@ -226,13 +224,12 @@ article:last-of-type {
   font-style: normal;
   font-weight: 700;
   line-height: var(--line-height-main);
-  margin-block-end: 20px;
-  border-radius: 6px;
+  margin-block-end: 15px;
 }
 
 .tip-heading {
   font-weight: 400;
-  margin-block-end: 12px;
+  margin-block-end: 11px;
 }
 
 .gallery {
@@ -250,7 +247,6 @@ article:last-of-type {
   font-weight: 700;
   line-height: var(--line-height-main);
   margin-block-start: 50px;
-  border-radius: 6px;
 }
 
 .gallery__item {
