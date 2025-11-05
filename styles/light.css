@@ -1,27 +1,70 @@
 .page.theme_light {
-  --bg-image: url("../images/cover-image-light.png");
-  --accent-color: #ff8dcb;
-  --accent-color-opacity: #32312d66;
-  --text-color: #353430;
-  --decoration-color: var(--text-color);
-  --bg-color: #fff1f7;
-  --header1-color: #ffc2e6;
-  --header2-color: var(--text-color);
-  --header3-color: var(--text-color);
-  --is-light: hidden;
+  --color-accent: #ff8dcb;
+  --color-text: #353430;
+  --color-button: #353430;
+  --color-button-hover: rgba(50, 49, 45, 0.40);
+  --color-subtitle: #353430;
+  --color-corner: #353430;
+  --color-rec: transparent;
+  --font-family-main: 'IBM Plex Mono', monospace;
+  --space-sm: 12px;
+  --space-md: 23px;
+  --font-size-main: 18px;
+  --line-height-main: 23.4px;
+  --color-title-bg: #ff8dcb;
+  --color-bg: #fff1f7;
+  --color-heading: #353430;
+  --color-header: #ffc2e6;
+  --color-footer: #ffc2e6;
+  --color-link-underline: #353430;
+  --color-shadow: #ff8dcb;
+  background-image: url(../images/cover-image-light.png);
+}
+
+@media (width <= 1024px) {
+  .theme_light.header__topic-name {
+    --color-shadow: #ff8dcb;
+  }
+
+  .theme_light.footer__title {
+    --color-shadow: #ff8dcb;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-image: url("../images/cover-image-light.png");
-    --accent-color: #ff8dcb;
-    --accent-color-opacity: #32312d66;
-    --text-color: #353430;
-    --decoration-color: var(--text-color);
-    --bg-color: #fff1f7;
-    --header1-color: #ffc2e6;
-    --header2-color: var(--text-color);
-    --header3-color: var(--text-color);
-    --is-light: hidden;
+    --color-accent: #ff8dcb;
+    --color-text: #353430;
+    --color-button: #353430;
+    --color-button-hover: rgba(50, 49, 45, 0.40);
+    --color-subtitle: #353430;
+    --color-corner: #353430;
+    --color-rec: transparent;
+    --font-family-main: 'IBM Plex Mono', monospace;
+    --space-sm: 12px;
+    --space-md: 23px;
+    --font-size-main: 18px;
+    --line-height-main: 23.4px;
+    --color-title-bg: #ff8dcb;
+    --color-bg: #fff1f7;
+    --color-heading: #353430;
+    --color-header: #ffc2e6;
+    --color-footer: #ffc2e6;
+    --color-link-underline: #353430;
+    --color-shadow: #ff8dcb;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  @media (width <= 1024px) {
+    .theme_light.header__topic-name {
+      --color-shadow: #ff0070;
     }
+
+    .theme_light.footer__title {
+      --color-shadow: #ff0070;
+    }
+  }
 }
