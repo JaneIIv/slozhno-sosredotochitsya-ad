@@ -173,3 +173,17 @@
   height: 100%;
 }
 
+.footer {
+  padding: 10px;
+  block-size: 100vh;
+  display: grid;
+}
+
+.footer__title {
+  justify-self: center;
+  align-self: center;
+  color: var(--header1-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: var(--title-line-height);
+}
