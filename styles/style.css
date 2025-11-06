@@ -189,7 +189,6 @@ article:last-of-type {
   text-decoration: none;
   text-shadow: 2px 2px 0px var(--color-accent);
   cursor: pointer;
-  transition: border-color 0.3s ease;
 }
 
 .link-accent:hover {
